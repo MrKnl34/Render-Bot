@@ -201,7 +201,7 @@ def get_readable_message():
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
 
                 else:
-                    msg += f"\n<b>╭ ꜱᴛᴀᴛᴜꜱ : </b><i>{download.status()}</i>"
+                    msg += f"\n<b>┌ ꜱᴛᴀᴛᴜꜱ : </b><i>{download.status()}</i>"
                     msg += f"\n<b>├ </b>{get_progress_bar_string(download)} {download.progress()}"
                     msg += f"\n<b>├ ᴘʀᴏᴄᴇꜱꜱ : </b> {get_readable_file_size(download.processed_bytes())} of {download.size()}"
                     msg += f"\n<b>├ ꜱᴘᴇᴇᴅ : </b> {download.speed()}"
@@ -257,14 +257,14 @@ def get_readable_message():
                     msg += f"\n<b>├ ʀᴀᴛɪᴏ: </b>{download.ratio()}"
                     msg += f" | <b> ᴛɪᴍᴇ: </b>{download.seeding_time()}"
                     msg += f"\n<b>├ ᴇʟᴀᴘꜱᴇᴅ: </b>{get_readable_time(time() - download.message.date.timestamp())}"
-                    msg += f"\n<b>╰ ᴄᴀɴᴄᴇʟ: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+                    msg += f"\n<b>└ ᴄᴀɴᴄᴇʟ: </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
             else:
                 if EMOJI_THEME is True:
                     msg += f"\n<b>├⛓️ Engine :</b> {download.eng()}"
                     msg += f"\n<b>╰📐 Size: </b>{download.size()}"
                 else:
                     msg += f"\n<b>├ ᴇɴɢɪɴᴇ :</b> {download.eng()}"
-                    msg += f"\n<b>╰ ꜱɪᴢᴇ: </b>{download.size()}"
+                    msg += f"\n<b>└ ꜱɪᴢᴇ: </b>{download.size()}"
             msg += f"\n<b>_____________________________________</b>"
             msg += "\n\n"
             if index == STATUS_LIMIT:
