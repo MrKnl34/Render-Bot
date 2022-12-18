@@ -208,7 +208,6 @@ def get_readable_message():
                     msg += f"\n<b>├ ᴇᴛᴀ : </b> {download.eta()}"
                     msg += f"<b> | ᴇʟᴀᴘꜱᴇᴅ : </b>{get_readable_time(time() - download.message.date.timestamp())}"
                     msg += f"\n<b>├ ᴇɴɢɪɴᴇ : </b> {download.eng()}"
-                    msg += f"\n<b>├ ꜱᴏᴜʀᴄᴇ : </b><a href='{download.message.link}'>{download.message.from_user.first_name}</a>"
 
                 if hasattr(download, 'seeders_num'):
                     try:
@@ -227,7 +226,7 @@ def get_readable_message():
                             msg += f'\n<b>├🌐 Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
                             msg += f"\n<b>╰❌ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                         else:
-                            msg += f'\n<b>├ ꜱᴏᴜʀᴄᴇ : </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f'\n<b>├ ꜱᴏᴜʀᴄᴇ : </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>ɪᴅ :</b> <code>{download.message.from_user.id}</code>'
                             msg += f"\n<b>╰ ᴄᴀɴᴄᴇʟ : </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"                 
                     except:
                         pass
