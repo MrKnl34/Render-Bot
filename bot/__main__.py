@@ -180,9 +180,9 @@ def stats(update, context):
                     f'<b>├ ᴄᴘᴜ:</b> [{progress_bar(cpuUsage)}] {cpuUsage}%\n'\
                     f'<b>├ ʀᴀᴍ:</b> [{progress_bar(mem_p)}] {mem_p}%\n'\
                     f'<b>├ ᴅɪꜱᴋ:</b> [{progress_bar(disk)}] {disk}%\n'\
-                    f'<b>├ ᴅɪꜱᴋ ᴛᴏᴛᴀʟ:</b> {total}\n'\ 
+                    f'<b>├ ᴅɪꜱᴋ ᴛᴏᴛᴀʟ:</b> {total}\n'\
                     f'<b>├ ᴅɪꜱᴋ ꜰʀᴇᴇ:</b> {free}\n'\
-                    f'<b>├ ᴛᴏᴛᴀʟ ᴍᴇᴍᴏʀʏ:</b> {mem_t}\n'\ 
+                    f'<b>├ ᴛᴏᴛᴀʟ ᴍᴇᴍᴏʀʏ:</b> {mem_t}\n'\
                     f'<b>├ ᴜᴘʟᴏᴀᴅ ᴅᴀᴛᴀ:</b> {sent}\n'\
                     f'<b>╰ ᴅᴏᴡɴʟᴏᴀᴅ ᴅᴀᴛᴀ:</b> {recv}\n\n'
 
