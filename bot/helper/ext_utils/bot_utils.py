@@ -195,7 +195,6 @@ def get_readable_message():
                     msg += f"\n<b>├ ᴇᴛᴀ : </b> {download.eta()}"
                     msg += f"<b> | ᴇʟᴀᴘꜱᴇᴅ : </b>{get_readable_time(time() - download.message.date.timestamp())}"
                     msg += f"\n<b>├ ᴇɴɢɪɴᴇ : </b> {download.eng()}"
-                    msg += f"\n<b>├ ꜱᴏᴜʀᴄᴇ : </b> <a href='{download.message.link}'>{uname}</a>"
 
                 if hasattr(download, 'seeders_num'):
                     try:
