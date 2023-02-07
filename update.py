@@ -37,7 +37,7 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/MrKnl5/Magneto-WZ"
+    UPSTREAM_REPO = "https://github.com/MrKnl34/Render-Bot"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
